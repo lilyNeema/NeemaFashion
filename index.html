@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Fashion Blog</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- navigation bar-->
+    <nav class="topnav">
+        <a class="active " href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Our Products</a>
+        <a class="con" href="contact.html">Contact Us</a>
+  </nav>
+<div class="container">
+  <h1>FASHION BLOG</h1>
+</div>
+<!-- video slideshow -->
+<section class="service-details">
+
+    <div class="mySlides fade"><center>
+    <video autoplay controls muted><source src="video/video-1.mp4" type="video/mp4"></video>
+    </div></center>
+    <div class="mySlides fade">
+
+  <div style="text-align:center; margin-left: 27%;">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+<!-- javascript code for the slideshow -->
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("dot");
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";  
+}
+slideIndex++;
+if (slideIndex > slides.length) {slideIndex = 1}    
+for (i = 0; i < dots.length; i++) {
+  dots[i].className = dots[i].className.replace(" activee", "");
+}
+slides[slideIndex-1].style.display = "block";  
+dots[slideIndex-1].className += " activee";
+setTimeout(showSlides, 20000);
+}
+</script>
+</div>
+</section>
+<!-- our gallery-->
+<div class="container">
+          <h2><b>OUR PRODUCTS</b></h2>
+</div>
+  <section class="portfolio">
+    <div class="row">
+              <div class="portfolio-item">
+                  <h3>Ladies wear</h3>
+                 <a href="ladies.html"><img src="img/ladies/1.jpeg" alt="" ></a>
+              </div>
+              
+              <div class="portfolio-item" style="width: 25%;">
+                  <h3>Gents wear</h3>
+                  <a href="gents.html"><img src="img/gents/1.jpeg" class="img-fluid" alt="" style="margin-left: 50%;"></a>
+              </div>
+    
+              <div class="portfolio-item">
+                  <h3>Children wear</h3>
+                  <a href="kids.html"><img src="img/kids/1.jpeg" class="img-fluid" alt="" style="margin-left: 90%; width: 130%;"></a>
+              </div>
+    </div>
+    
+    <div class="row">
+                  <div class="portfolio-item">
+                    <h3>Shoes</h3>
+                    <a href="shoes.html"><img src="img/shoes/0.jpeg" class="img-fluid" alt="" style="width: 78%;"></a>
+                  </div>
+                  <div class="portfolio-item">
+                    <h3>Jewelry</h3>
+                    <a href="jewel.html"><img src="img/jewel/3.jpeg" class="img-fluid" alt="" style="width: 69%;"></a>
+                  </div>           
+                  <div class="portfolio-item">
+                    <h3>Bags</h3>
+                    <a href="bag.html"><img src="img/bags/2.jpeg" class="img-fluid" alt="" style="width: 120%; margin-left: 53%;"></a>
+                  </div>
+    </div>
+            <div class="row">
+                  <div class="portfolio-item">
+                    <h3>Sunglasses</h3>
+                    <a href="glass.html"><img src="img/glasses/1.jpeg" class="img-fluid" alt="" style="width: 88%;"></a>
+                  </div>
+              
+                  <div class="portfolio-item">
+                    <h3>Hair</h3>
+                    <a href="hair-nail.html"><img src="img/hair/1.jpeg" class="img-fluid" alt="" style="width: 140%; margin-left: 120%;"></a>
+                  </div>
+              
+                  <div class="portfolio-item">
+                    <h3>Nails</h3>
+                    <a href="hair-nail.html"><img src="img/hair/8.jpeg" class="img-fluid" alt="" style="width: 170%; margin-left: 260%;"></a>
+                  </div>
+    </div>            
+    </section>
+    
+<footer style="margin-bottom: 1%; margin-top: 5%;">
+  <small>
+    Copyright © 2023 Fashion Bloggers. All Rights Reserved.
+  </small>
+</footer>
+</body>
+</html>
+
